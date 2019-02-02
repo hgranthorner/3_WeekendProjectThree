@@ -1,0 +1,23 @@
+{
+  "name": "3_WeekendProjectThree",
+  "version": "1.0.0",
+  "description": "Create:   1. a psql db holding users and things   2. backend node server     a. access and refresh data from db     b. route requests from the front end     c. generate front end html       a. access and refresh data from db       b. route requests from the front end       c. generate front end html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgranthorner/3_WeekendProjectThree.git"
+  },
+  "keywords": [],
+  "author": "Grant Horner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgranthorner/3_WeekendProjectThree/issues"
+  },
+  "homepage": "https://github.com/hgranthorner/3_WeekendProjectThree#readme",
+  "dependencies": {
+    "pg": "^7.8.0"
+  }
+}

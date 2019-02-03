@@ -32,7 +32,7 @@ app.get('/pages/:id', (req, res, next) => {
     .then(data => {
       req.acmeWebContent = data
       console.log(req.acmeWebNames)
-      res.send(html.header(req.acmeWebTitle, req.acmeWebNames))
+      res.send(html.header(req.acmeWebTitle, req.acmeWebNames, req.params.id) + html.body(data) + html.footer())
     })
     .catch(next)
 })

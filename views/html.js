@@ -20,7 +20,15 @@ function header(title, names) {
     </ul>`
 }
 
-function body(data) {}
+function body(data) {
+  return `${data
+    .map(row => {
+      return `<h1>${row.name}</h1>
+      <p>${row.body}</p>`
+    })
+    .join('')}
+  `
+}
 
 function footer() {
   return `</div>
@@ -30,5 +38,6 @@ function footer() {
 
 module.exports = {
   header,
+  body,
   footer
 }
